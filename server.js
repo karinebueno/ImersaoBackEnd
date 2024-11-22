@@ -4,6 +4,8 @@ import routes from "./src/routes/postsRoutes.js";
 // const conexao = await conectarAoBanco(process.env.STRING_CONEXAO)
 
 const app = express();
+//servir arquivos estáticos
+app.use(express.static("uploads"));
 routes(app);
 
 // app é o servidor, 3000 é uma porta

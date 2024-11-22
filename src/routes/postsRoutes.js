@@ -1,6 +1,12 @@
 import express from "express";
 import multer from "multer";
-import { listarPosts, postarNovoPost, uploadImagem } from "../controllers/postsController.js";
+import { listarPosts, postarNovoPost, uploadImagem, atualizarNovoPost } from "../controllers/postsController.js";
+import cors from "cors";
+
+const corsOptions = {
+  origin: "http://localhost:8000",
+  optionsSuccessStatus: 200
+}
 
 // Configura o armazenamento de arquivos utilizando o multer.
 // O multer é uma biblioteca que auxilia no upload de arquivos para o servidor.
@@ -21,6 +27,7 @@ const upload = multer({ dest: "./uploads", storage });
 const routes = (app) => {
   // Permite que o servidor interprete requisições com corpo no formato JSON.
   app.use(express.json());
+  app.use(cors(corsOptions));
 
   // Rota para buscar todos os posts.
   app.get("/posts", listarPosts);
@@ -32,6 +39,8 @@ const routes = (app) => {
   // O parâmetro 'upload.single("imagem")' indica que estamos esperando um único arquivo
   // com o nome "imagem" no corpo da requisição.
   app.post("/upload", upload.single("imagem"), uploadImagem);
+
+  app.put("/upload/:id", atualizarNovoPost)
 };
 
 export default routes;
