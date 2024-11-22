@@ -39,7 +39,19 @@ Este projeto foi desenvolvido durante a **Imersão Dev Back-End**, com o objetiv
 - Referências úteis:  
   - [Introdução ao MongoDB](https://www.alura.com.br/artigos/mongodb-o-banco-baseado-em-documentos)
   - [Async/await no JavaScript: o que é?](https://www.alura.com.br/artigos/async-await-no-javascript-o-que-e-e-quando-usar) 
-  - [Conceitos de Cloud](https://www.alura.com.br/artigos/cloud)  
+  - [Conceitos de Cloud](https://www.alura.com.br/artigos/cloud)
+
+### **Aula 4**  
+- Enviar informações para a sua base de dados 
+- Aprender sobre verbos HTTP
+- Criar a rota POST/post e POST/upload
+- Implementar o upload de imagens
+- Testar a API com thunderClient e Postman
+- Referências úteis:  
+  - [O que são regras de negócio?](https://www.alura.com.br/artigos/o-que-sao-regras-de-negocio)
+  - [Async/await no JavaScript: o que é e quando usar?](https://www.alura.com.br/artigos/async-await-no-javascript-o-que-e-e-quando-usar)
+  - [MongoDB: exemplos de uso - inserir operações](https://www.mongodb.com/pt-br/docs/drivers/node/current/usage-examples/insert-operations/)
+  - [MongoDB: exemplos de uso - atualizar e substituir operações](https://www.mongodb.com/pt-br/docs/drivers/node/current/usage-examples/update-and-replace-operations/)
 
 ## 🚀 Comandos Úteis  
 
